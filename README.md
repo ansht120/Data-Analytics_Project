@@ -49,35 +49,6 @@ Dashboard shows:
 ## 7. Conclusion
 This project provides a full ML workflow with SQL + Dashboard support
 
-##SQL QUeries##
-CREATE TABLE furniture_data (
-    item_id INT PRIMARY KEY,
-    category VARCHAR(50),
-    material VARCHAR(50),
-    base_price FLOAT,
-    discount FLOAT,
-    final_price FLOAT,
-    seller_rating FLOAT,
-    demand_score INT
-);
-
-INSERT INTO furniture_data VALUES
-(1,'Chair','Wood',3000,10,2700,4.5,80);
-
-SELECT * FROM furniture_data
-ORDER BY final_price DESC
-LIMIT 5;
-
-SELECT category, AVG(final_price)
-FROM furniture_data
-GROUP BY category;
-
-SELECT * FROM furniture_data
-WHERE demand_score >= 80;
-
-SELECT discount, AVG(final_price)
-FROM furniture_data
-GROUP BY discount;
 
 SELECT item_id, base_price, discount,
 (base_price - (base_price * (discount/100))) AS expected_price
