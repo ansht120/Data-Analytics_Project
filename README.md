@@ -1,130 +1,51 @@
-📘 Simple Project Documentation – E-Commerce Furniture Prediction
-1. Project Overview
-
-This project predicts:
-
-Final selling price of furniture
-
-Whether the item will sell or not
-
-Price tag category (Budget, Premium, etc.)
-
-The project uses:
-
-Python
-
-Machine Learning
-
-Excel Dashboard
-
-SQL for data analysis
-
-2. Dataset
-
-The dataset contains:
-
-Category
-
-Material
-
-Condition
-
-Seller rating
-
-Demand score
-
-Base price
-
-Discount
-
-Final price (Target)
-
-Loaded using:
-
-df = pd.read_csv("furniture_data.csv")
-
-3. Steps in the Project
-a. Data Preprocessing
-
-Handling missing values
-
-Label encoding categorical columns
-
-Removing outliers
-
-Feature scaling
-
-Splitting data into train & test
-
-b. Exploratory Data Analysis (EDA)
-
-Price distribution
-
-Category-wise average prices
-
-Discount vs final price
-
-Correlation heatmap
-
-c. Feature Engineering
-
-Selecting important features
-
-Creating new features (price difference, demand score groups)
-
-4. Machine Learning Models
-
-Used:
-
-Random Forest Regressor → Predict final price
-
-Random Forest Classifier → Predict price tag
-
-Random Forest Classifier → Predict “Will it sell?”
-
-Model gives:
-
-Predicted Price: 30,704.70
-Sell? : Yes
-Tag : Budget Friendly
-
-5. SQL Queries
-
-Stored in furniture_queries.sql.
-
-Examples:
-
-SELECT * FROM furniture_data
-ORDER BY final_price DESC LIMIT 5;
-
-SELECT category, AVG(final_price)
-FROM furniture_data
-GROUP BY category;
-
-6. Excel Dashboard
-
-The dashboard shows:
-
-Total sales
-
-Average price per category
-
-Highest selling price
-
-Category-wise bar chart
-
-KPI cards
-
-8. Conclusion
-
-This is a complete end-to-end ML project covering:
-
-Data cleaning
-
-EDA
-
-Model training & evaluation
-
-SQL analysis
-
-Excel visualization
+# E-Commerce Furniture Prediction – Documentation
+## 1. Project Overview
+This project predicts the final selling price of furniture,
+whether the item will sell, and its price tag category using machine learning.
+## 2. Dataset
+The dataset includes:
+- Category
+- Material
+- Condition
+- Seller rating
+- Demand score
+- Base price
+- Discount
+- Final price (Target)
+## 3. Steps in the Project
+### a. Data Preprocessing
+- Handle missing values
+- Encode categorical data
+- Remove outliers
+- Scale features
+- Train-test split
+### b. Exploratory Data Analysis
+- Price distribution
+- Category-wise average price
+- Discount vs final price
+- Correlation heatmap
+### c. Feature Engineering
+- Selecting important features
+- Creating new attributes
+## 4. Machine Learning Models
+Models used:
+- Random Forest Regressor
+- Random Forest Classifier
+Output includes:
+- Predicted price
+- Will it sell?
+- Predicted tag
+## 5. SQL Queries
+Included queries:
+- Create table
+- Fetch highest-priced items
+- Average price by category
+- Demand-based filtering
+## 6. Excel Dashboard
+Dashboard shows:
+- KPIs (total sales, avg price)
+- Category-wise charts
+- Material distribution
+## 7. Conclusion
+This project provides a full ML workflow with SQL + Dashboard support
+  
