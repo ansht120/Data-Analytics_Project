@@ -54,3 +54,33 @@ SELECT item_id, base_price, discount,
 (base_price - (base_price * (discount/100))) AS expected_price
 FROM furniture_data;
 
+
+2.# Project Documentation: Analysis Notebook Summary
+## Introduction
+This document summarizes the workflow and results from the uploaded Jupyter Notebook. It includes data loading, cleaning, exploratory data analysis (EDA), modeling, and evaluation steps.
+## Dataset
+The notebook loads the dataset, inspects basic information, handles missing values, and performs preprocessing appropriate for the model.
+## Exploratory Data Analysis EDA steps include:
+-	Viewing distributions of numerical features
+-	Analyzing correlations
+-	Visualizing patterns and trends
+## Data Preprocessing
+Common steps include:
+-	Handling null values
+-	Encoding categorical variables
+-	Scaling numerical fields (if used)
+-	Splitting the dataset into training and testing subsets
+## Modeling
+Machine learning models are trained using:
+-	Train-test split
+-	Model training (e.g., RandomForest, Logistic Regression, etc.)
+-	Hyperparameter tuning (if present)
+## Evaluation
+The notebook evaluates predictions using:
+-	Accuracy score
+-	Confusion matrix
+-	Visual plots
+## Conclusion
+The notebook successfully demonstrates the end-to-end ML workflow. You can enrich this documentation further with domain-specific explanations, screenshots, and final observations.
+
+
